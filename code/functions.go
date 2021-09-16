@@ -1,3 +1,3 @@
 package code
 
-func Execute(fn *Function, arguments []string) ([]Result, []SideEffect, error)
+func Execute(client *identity.Client, fn *Function, arguments []string) ([]Result, []SideEffect, error)
