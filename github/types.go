@@ -8,3 +8,8 @@ type Client struct {
 	Name string
 	Token string
 }
+
+type FileSystem struct {
+	Tree *Tree
+	Client *Client
+}
