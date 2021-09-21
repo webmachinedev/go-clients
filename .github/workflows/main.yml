@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: webmachinedev/go-clients/.github/actions/codebot
+        uses: webmachinedev/go-clients/.github/actions/codebot@main
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
