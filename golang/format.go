@@ -1,3 +1,3 @@
 package golang
 
-func Format()
+func    Format()
