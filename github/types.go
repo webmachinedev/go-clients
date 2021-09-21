@@ -7,12 +7,12 @@ type Tree struct {
 }
 
 type Client struct {
-	Name string
+	Name  string
 	Token string
 }
 
 type FileSystem struct {
-	Tree *Tree
+	Tree   *Tree
 	Client *Client
 }
 

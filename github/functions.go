@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-github/v37/github"
 )
 
-func Lint(client *Client, tree *Tree) 
+func Lint(client *Client, tree *Tree)
 
 func WriteFiles(owner, repo, branch string, files map[string]string, commitmessage, githubkey string) error {
 	ctx := context.Background()

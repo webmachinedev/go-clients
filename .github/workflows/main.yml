@@ -1,19 +1,16 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  format:
+    name: Format
     runs-on: ubuntu-latest
-    name: Automatically fix code
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: webmachinedev/go-clients/.github/actions/codebot@main
-        id: hello
-        with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: go fmt
+      run: go fmt ./...

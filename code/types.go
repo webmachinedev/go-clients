@@ -4,7 +4,7 @@ type Function struct {
 	ID string
 }
 
-type Result struct {}
+type Result struct{}
 
 type Type struct {
 	ID string

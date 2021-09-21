@@ -1,0 +1,15 @@
+name: 'Format'
+description: 'go fmt'
+inputs:
+  pkg:
+    description: 'Name of the package. Example: "github.com/webmachinedev/go-clients/shopify"'
+    required: false
+    default: '.'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.pkg }}
