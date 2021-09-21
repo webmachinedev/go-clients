@@ -24,8 +24,5 @@ jobs:
     - name: stage changes
       run: git add --all
 
-    - name: commit
-      run: git commit -m "fmt"
-
-    - name: push
-      run: git push
+    - name: commit and push
+      run: git commit -m "fmt" && git push
