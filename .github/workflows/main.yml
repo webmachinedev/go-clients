@@ -15,6 +15,12 @@ jobs:
     - name: go fmt
       run: go fmt ./...
 
+    - name: set git user email
+      run: git config --global user.email "merybka@gmail.com"
+
+    - name: set git user name
+      run: git config --global user.name "Michael Rybka"
+
     - name: stage changes
       run: git add --all
 
