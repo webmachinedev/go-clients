@@ -25,4 +25,4 @@ jobs:
       run: git add --all
 
     - name: commit and push
-      run: git commit -m "fmt" && git push
+      run: git diff --quiet && git commit -m "fmt" && git push ; echo done
