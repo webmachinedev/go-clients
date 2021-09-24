@@ -10,4 +10,4 @@ type Type struct {
 	ID string
 }
 
-type SideEffect struct {}
+type SideEffect struct{}
