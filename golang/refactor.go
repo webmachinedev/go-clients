@@ -1,3 +1,3 @@
 package golang
 
-func Refactor()
+func Refactor() {}
