@@ -15,6 +15,6 @@ type Table struct {
 }
 
 type Type struct {
-	Name string
+	Name     string
 	Validate func(value io.Reader) bool
 }
