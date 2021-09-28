@@ -14,5 +14,5 @@ type Table struct {
 
 type Type struct {
 	Name string
-	Validate(value []byte) bool
+	Validate func(value []byte) bool
 }
