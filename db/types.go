@@ -12,4 +12,7 @@ type Table struct {
 	Fields map[string]*Type
 }
 
-type Type string
+type Type struct {
+	Name string
+	Validate(value []byte) bool
+}
