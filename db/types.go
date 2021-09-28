@@ -1,5 +1,7 @@
 package db
 
+import "io"
+
 type Database struct {
 	Schema Schema
 }
@@ -14,5 +16,5 @@ type Table struct {
 
 type Type struct {
 	Name string
-	Validate func(value []byte) bool
+	Validate func(value io.Reader) bool
 }
