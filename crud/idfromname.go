@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 var allButLettersRegex regexp.Regexp
 
 func init() {
@@ -17,7 +16,7 @@ func init() {
 }
 
 func filterString(str string) string {
-    return allButLettersRegex.ReplaceAllString(str, "")
+	return allButLettersRegex.ReplaceAllString(str, "")
 }
 
 func CreateIDFromName(name string) string {
